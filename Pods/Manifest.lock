@@ -1,5 +1,4 @@
 PODS:
-  - CleanJSON (1.0.9)
   - CodableWrapper (0.3.2)
   - MMKV (1.2.15):
     - MMKVCore (~> 1.2.15)
@@ -9,26 +8,23 @@ PODS:
   - XCoordinator/Core (2.2.1)
 
 DEPENDENCIES:
-  - CleanJSON
   - CodableWrapper
   - MMKV
   - XCoordinator
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
-    - CleanJSON
     - CodableWrapper
     - MMKV
     - MMKVCore
     - XCoordinator
 
 SPEC CHECKSUMS:
-  CleanJSON: 910a36465ce4829e264a902ccf6d1455fdd9f980
   CodableWrapper: fbb76b3bea6519564b456bb295317df35d5100c5
   MMKV: 7f34558bbb5a33b0eaefae2de4b6a20a2ffdad6f
   MMKVCore: ddf41b9d9262f058419f9ba7598719af56c02cd3
   XCoordinator: 2cf9f72e10998b7a4a4bbeac3d07e071ea82fca3
 
-PODFILE CHECKSUM: 68e75f497d05ac3e6671b2966cd4a6bd3dfb9be6
+PODFILE CHECKSUM: b13d020731d5038e2cfa457d4dfecaf481351f01
 
 COCOAPODS: 1.11.3

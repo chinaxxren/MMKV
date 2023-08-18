@@ -4,50 +4,33 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CleanJSON.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
 		<key>CodableWrapper.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>1</integer>
+			<false/>
 		</dict>
 		<key>MMKV.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>2</integer>
+			<false/>
 		</dict>
 		<key>MMKVCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>3</integer>
+			<false/>
 		</dict>
 		<key>Pods-Base.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>4</integer>
+			<false/>
 		</dict>
 		<key>XCoordinator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false />
-			<key>orderHint</key>
-			<integer>5</integer>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict />
+	<dict/>
 </dict>
 </plist>

@@ -10,7 +10,6 @@ target 'Base' do
   pod 'XCoordinator'
   
   pod 'MMKV'
-  pod 'CleanJSON'
   pod 'CodableWrapper'
 
   # SDK
