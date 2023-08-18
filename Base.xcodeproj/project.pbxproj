@@ -14,7 +14,7 @@
 		82B6CC182792A1DD00CE5FFC /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B6CC172792A1DD00CE5FFC /* SecondController.swift */; };
 		82B6CC1A2792A29800CE5FFC /* RouterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B6CC192792A29800CE5FFC /* RouterManager.swift */; };
 		82B6CC1E2792A7C900CE5FFC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B6CC1D2792A7C900CE5FFC /* AppCoordinator.swift */; };
-		82F0B1F629DC6F6F00839FA7 /* WQStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F0B1F529DC6F6F00839FA7 /* WQStore.swift */; };
+		82C281372A8F2B9200BA889F /* VVStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C281362A8F2B9200BA889F /* VVStore.swift */; };
 		F6A75A1D7C8C7D3A9168F695 /* Pods_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7927E6BC164CC15AA7F171B9 /* Pods_Base.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +31,7 @@
 		82B6CC172792A1DD00CE5FFC /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		82B6CC192792A29800CE5FFC /* RouterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterManager.swift; sourceTree = "<group>"; };
 		82B6CC1D2792A7C900CE5FFC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		82F0B1F529DC6F6F00839FA7 /* WQStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WQStore.swift; sourceTree = "<group>"; };
+		82C281362A8F2B9200BA889F /* VVStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VVStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				82B6CC172792A1DD00CE5FFC /* SecondController.swift */,
 				82B6CC192792A29800CE5FFC /* RouterManager.swift */,
 				82B6CC1D2792A7C900CE5FFC /* AppCoordinator.swift */,
-				82F0B1F529DC6F6F00839FA7 /* WQStore.swift */,
+				82C281362A8F2B9200BA889F /* VVStore.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -216,7 +216,7 @@
 				82B6CC1E2792A7C900CE5FFC /* AppCoordinator.swift in Sources */,
 				82B6CC182792A1DD00CE5FFC /* SecondController.swift in Sources */,
 				82B6CC062792A03C00CE5FFC /* AppDelegate.swift in Sources */,
-				82F0B1F629DC6F6F00839FA7 /* WQStore.swift in Sources */,
+				82C281372A8F2B9200BA889F /* VVStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +292,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -346,6 +347,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
