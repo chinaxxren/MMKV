@@ -60,17 +60,23 @@ class VVMulti<T: Codable & VVIdenti> {
         VVStore.shared.mmkv.removeValue(forKey: key)
     }
 
+    func count() -> Int {
+        lock.lock()
+        defer { lock.unlock() }
+        return get().count
+    }
+    
     func exist() -> Bool {
         lock.lock()
         defer { lock.unlock() }
 
-        return VVStore.shared.mmkv.contains(key: key)
+        return count() != 0
     }
 
     func exist(_ vvid: String) -> Bool {
         lock.lock()
         defer { lock.unlock() }
-        var items = get()
+        let items = get()
         let index = items.firstIndex(where: { $0.vvid == vvid })
         return index != nil
     }

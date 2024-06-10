@@ -55,11 +55,16 @@ class ViewController: UIViewController {
         print("++++++++++++++++++++++++++++++++++++")
         
         store.remove(book1.vvid)
+        store.remove(book2.vvid)
         books = store.get()
         for book in books {
             print("\(book.name)   \(book.content)")
         }
         print("++++++++++++++++++++++++++++++++++++")
+       
+        print(store.exist())
+        
+        
         store.remove()
         books = store.get()
         for book in books {
