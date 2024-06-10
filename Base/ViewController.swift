@@ -5,16 +5,15 @@
 //  Created by 赵江明 on 2022/1/15.
 //
 
-import UIKit
 import CodableWrapper
+import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Main"
-        self.view.backgroundColor = .red
+        title = "Main"
+        view.backgroundColor = .red
         testBook()
     }
 
@@ -23,15 +22,52 @@ class ViewController: UIViewController {
     }
     
     func testBook() {
-        let store = VVStore()
-        store.create(mmkvID: "store")
+        VVStore.shared.create(mmkvID: "store")
+        
+        let store = VVMulti<Book>()
+        store.remove()
+        
         let book1 = Book()
+        book1.name = "1"
         book1.time = Date()
-        book1.content = "2222"
-        store.current.saveItem([book1])
+        book1.content = "111"
+        
+        let book2 = Book()
+        book2.name = "2"
+        book2.time = Date()
+        book2.content = "222"
+        
+        store.save([book1, book2])
        
-        let book11 = store.current.getItem([Book].self)
-        print(book11?.first?.content ?? "error")
+        var books = store.get()
+        for book in books {
+            print("\(book.name)   \(book.content)")
+        }
+        print("++++++++++++++++++++++++++++++++++++")
+        
+        book1.content = "121"
+        store.save(book1)
+        
+        books = store.get()
+        for book in books {
+            print("\(book.name)   \(book.content)")
+        }
+        print("++++++++++++++++++++++++++++++++++++")
+        
+        store.remove(book1.vvid)
+        books = store.get()
+        for book in books {
+            print("\(book.name)   \(book.content)")
+        }
+        print("++++++++++++++++++++++++++++++++++++")
+        store.remove()
+        books = store.get()
+        for book in books {
+            print("\(book.name)   \(book.content)")
+        }
+        print("++++++++++++++++++++++++++++++++++++")
+        
+    
     }
     
 //    func testMMKV() {
@@ -65,8 +101,12 @@ class ViewController: UIViewController {
 //    }
 }
 
-class Book: Codable {
+class Book: Codable, VVIdenti {
     @Codec var time: Date?
     @Codec var content: String = ""
-    @Codec var nane: String?
+    @Codec var name: String = ""
+    
+    var vvid: String {
+        return name
+    }
 }
